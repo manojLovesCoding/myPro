@@ -37,16 +37,18 @@ export default App;
 import DefaultComponent from "./HOC/Default.HOC";
 
 //Component
-import Temp from "./components/temp";
+/*import Temp from "./components/temp";*/
+import HomePage from "./pages/Home.page";
 
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
   return (
     <>
 
-      <DefaultComponent path="/" component={<Temp />} />
+      <DefaultComponent path="/" component={<HomePage />} />
 
 
 
