@@ -58,7 +58,7 @@ export const Premier = () => {
         <>
             <Slider {...settings}>
                 {PremierImages.map((image) => (
-                    <Poster {...image} />
+                    <Poster {...image} isDark />
                 ))}
 
             </Slider>
