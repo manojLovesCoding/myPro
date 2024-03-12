@@ -1,7 +1,7 @@
 import React from "react";
-import { FaChevronRight, FaChevronDown } from "react-icons/fa6";
+import { FaChevronRight, FaChevronDown, FaChevronLeft } from "react-icons/fa6";
 import { IoMdMenu } from "react-icons/io";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaShareAlt } from "react-icons/fa";
 
 const NavSm = () => {
     return (
@@ -9,27 +9,17 @@ const NavSm = () => {
             <div className="text-white flex items-center justify-between">
                 <div>
                     <h3 className="text-xl font-bold">It All Start Here</h3>
-                    <span className="text-gray-400 text-xs flex items-center">
-                        Bangalore <FaChevronRight />
-                    </span>
+
                 </div>
                 <div className="w-8 h-8">
-                    <FaSearch className="w-full h-full " />
+                    <FaShareAlt className="w-full h-full " />
                 </div>
             </div>
         </>
     )
 };
 
-const NavMd = () => {
-    return (
 
-        <div className="w-full flex item-center bg-white gap-3 px-3 py-2 rounded-md">
-            <FaSearch />
-            <input type="search" className="w-full focus:outline-none" placeholder="Search for movies, events, plays, sports and activities" />
-        </div>
-    )
-};
 const NavLg = () => {
     return (
 
@@ -62,16 +52,17 @@ const NavLg = () => {
 
 };
 
-const Navbar = () => {
+const MovieNavbar = () => {
     return (
         <>
-            <nav className="bg-navCol-700 px-4 py-2">
+
+            <nav className="absolute inset-x-0 z-30 bg-opacity-10 backdrop-filter backdrop-blur-lg lg:relative bg-navCol-700 px-4 py-2">
                 <div className="md:hidden ">{
                     <NavSm />
                 }
                 </div>
-                <div className="hidden lg:hidden md:flex">{
-                    <NavMd />
+                <div className="hidden lg:hidden md:block">{
+                    <NavSm />
                 }
                 </div>
                 <div className="hidden lg:flex">{
@@ -83,4 +74,4 @@ const Navbar = () => {
     )
 };
 
-export default Navbar;
+export default MovieNavbar;

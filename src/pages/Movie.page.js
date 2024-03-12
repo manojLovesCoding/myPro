@@ -4,10 +4,10 @@ const Movie = () => {
     return (
         <>
             <div>
-                <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shaitaan-et00384234-1706179766.jpg" alt="" />
+                <img src="https://getwallpapers.com/wallpaper/full/b/4/a/1267876-download-movie-poster-wallpaper-1920x1080.jpg" alt="" />
             </div>
         </>
     );
 };
 
-export default Movie
+export default Movie;

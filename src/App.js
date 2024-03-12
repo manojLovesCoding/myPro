@@ -50,8 +50,8 @@ function App() {
   return (
     <>
 
-      <DefaultComponent path="/" exact component={<HomePage />} />
-      <MovieHOC path="/movie/:id" exact component={<Movie />} />
+      <DefaultComponent path="/" exact component={<HomePage />} />,
+      <MovieHOC path="/movie/:id" exact component={<Movie />} />,
 
 
 
