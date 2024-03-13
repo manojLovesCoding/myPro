@@ -55,7 +55,6 @@ const NavLg = () => {
 const MovieNavbar = () => {
     return (
         <>
-
             <nav className="absolute inset-x-0 z-30 bg-opacity-10 backdrop-filter backdrop-blur-lg lg:relative bg-navCol-700 px-4 py-2">
                 <div className="md:hidden ">{
                     <NavSm />
@@ -69,7 +68,8 @@ const MovieNavbar = () => {
                     <NavLg />
                 }
                 </div>
-            </nav >
+            </nav>
+
         </>
     )
 };
