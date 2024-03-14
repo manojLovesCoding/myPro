@@ -41,6 +41,7 @@ import MovieHOC from "./HOC/Movie.Hoc";
 /*import Temp from "./components/temp";*/
 import HomePage from "./pages/Home.page";
 import Movie from "./pages/Movie.page";
+import Plays from "./pages/Play.page";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -52,6 +53,7 @@ function App() {
 
       <DefaultComponent path="/" exact component={<HomePage />} />,
       <MovieHOC path="/movie/:id" exact component={<Movie />} />,
+      <DefaultComponent path="/plays" exact component={<Plays />} />,
 
 
 
