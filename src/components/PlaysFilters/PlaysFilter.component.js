@@ -4,7 +4,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const PlaysFilter = (props) => {
     return (
-        <Disclosure>
+        <Disclosure className="bg-slate-400">
             {({ open }) => (
                 <>
                     <Disclosure.Button className="py-2 flex items-center gap-3">

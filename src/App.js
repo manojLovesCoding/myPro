@@ -37,6 +37,9 @@ export default App;
 import DefaultComponent from "./HOC/Default.HOC";
 import MovieHOC from "./HOC/Movie.Hoc";
 
+//axios
+import axios from "axios";
+
 //Component
 /*import Temp from "./components/temp";*/
 import HomePage from "./pages/Home.page";
@@ -46,6 +49,10 @@ import Plays from "./pages/Play.page";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+//axious default setting
+axios.defaults.baseURL = "https://api.themoviedb.org/3";
+axios.defaults.params = {};
+axios.defaults.params["api_key"] = process.env.REACT_APP_API_KEY;
 
 function App() {
   return (
