@@ -1,4 +1,5 @@
 import React from "react";
+import { FaStar } from "react-icons/fa";
 
 const MovieHero = () => {
     return (
@@ -17,7 +18,14 @@ const MovieHero = () => {
 
                 </div>
                 <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/shaitaan-et00384234-1706179766.jpg" className="w-full h-full" alt="poster" />
+
+                <h1 className="absolute z-40 top-20 left-96 text-white text-3xl font-bold">Shaitaan</h1>
+                <FaStar className="absolute z-40 top-32 left-96 h-10 w-10" />
             </div>
+
+
+
+
         </>
     );
 };
