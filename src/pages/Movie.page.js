@@ -5,6 +5,23 @@ import MovieHero from "../components/MovieHero/MovieHero.component";
 <div><img src="https://getwallpapers.com/wallpaper/full/b/4/a/1267876-download-movie-poster-wallpaper-1920x1080.jpg" alt="" />
 /div>*/
 
+const launchRazorPay = () => {
+    let options = {
+        key: "rzp_test_bb1BkMaCgNvA32",
+        amount: 500 * 100,
+        currency: "INR",
+        name: "Book My Show Clone",
+        description: "Movie Purchase on Rental",
+        image: "https://p7.hiclipart.com/preview/919/445/291/bookmyshow-office-android-ticket-android.jpg",
+        handler: () => {
+            alert("Payment Done")
+        },
+        theme: { color: "#c4242d" }
+    };
+    let rzp = new window.Razorpay(options);
+    rzp.open();
+};
+
 const Movie = () => {
     return (
         <>
@@ -32,7 +49,9 @@ const Movie = () => {
                         </div>
                     </div>
                 </div>
-
+                <button onClick={launchRazorPay} class="mt-4 bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded">
+                    Book tickets
+                </button>
             </div>
         </>
     );
